@@ -1,0 +1,51 @@
+>>> import requests
+>>> r = requests.get('https://httpbin.org/basic-auth/user/pass', auth=('user', 'pass'))
+>>> r.status_code
+200
+>>> r.headers['content-type']
+'application/json; charset=utf8'
+>>> r.encoding
+'utf-8'
+>>> r.text
+'{"authenticated": true, ...'
+>>> r.json()
+{'authenticated': True, ...}
+
+
+
+
+
+##########Used id location find########
+
+https://ipapi.co/8.8.8.8/json/
+
+
+
+
+##OUTPUT##
+
+{'ip': '118.179.44.49',
+ 'network': '118.179.44.0/24',
+ 'version': 'IPv4', 'city': 'Khulna',
+ 'region': 'Khulna Division',
+ 'region_code': 'D',
+ 'country': 'BD',
+ 'country_name': 'Bangladesh',
+ 'country_code': 'BD',
+ 'country_code_iso3': 'BGD',
+ 'country_capital': 'Dhaka', 
+'country_tld': '.bd',
+ 'continent_code': 'AS',
+ 'in_eu': False,
+ 'postal': '9100',
+ 'latitude': 22.8159, 
+'longitude': 89.566,
+ 'timezone': 'Asia/Dhaka',
+ 'utc_offset': '+0600',
+ 'country_calling_code': '+880', 'currency': 'BDT',
+ 'currency_name': 'Taka',
+ 'languages': 'bn-BD,en',
+ 'country_area': 144000.0,
+ 'country_population': 161356039,
+ 'asn': 'AS23956', 'org': 'AmberIT Limited'}
+
