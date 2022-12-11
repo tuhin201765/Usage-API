@@ -7,6 +7,7 @@ loc_url = f'https://ipapi.co/{ip}/json/'
 res = requests.get(loc_url)
 if res.status_code >= 200:
     ip_details = res.json()
+    print(ip_details)
     region = ip_details.get('region')
     country = ip_details.get('country_name')
     postal = ip_details.get('postal')

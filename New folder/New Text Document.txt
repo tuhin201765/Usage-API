@@ -49,3 +49,8 @@ https://ipapi.co/8.8.8.8/json/
  'country_population': 161356039,
  'asn': 'AS23956', 'org': 'AmberIT Limited'}
 
+
+
+###PRACTICE########
+
+https://www.arbeitnow.com/api/job-board-api
